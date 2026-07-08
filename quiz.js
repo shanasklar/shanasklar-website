@@ -213,20 +213,18 @@ function submitLead(e) {
 
   // Submit to Formspree — replace YOUR_FORM_ID with your actual Formspree form ID
   // Sign up free at formspree.io, create a form, and paste the ID here
-  const FORMSPREE_ID = 'YOUR_FORM_ID';
-
-  if (FORMSPREE_ID !== 'YOUR_FORM_ID') {
-    fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({
-        name,
-        email,
-        quiz_result: RESULTS[resultType].label,
-        quiz_result_type: resultKey
-      })
-    }).catch(() => {}); // fire and forget — don't block the redirect
-  }
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify({
+      access_key: '94db4811-bc72-4880-8788-345bca8393e5',
+      name,
+      email,
+      quiz_result: RESULTS[resultType].label,
+      quiz_result_type: resultKey,
+      subject: `New quiz lead: ${name} — ${RESULTS[resultType].label}`
+    })
+  }).catch(() => {});
 
   leadScreen.classList.add('hidden');
   loadingScreen.classList.remove('hidden');
