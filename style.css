@@ -34,8 +34,8 @@ h1, h2, h3, h4 {
 
 p { max-width: 62ch; }
 
-a { color: var(--terracotta); text-decoration: none; }
-a:hover { color: var(--terracotta-hover); }
+a { color: var(--sage); text-decoration: none; }
+a:hover { color: #556647; }
 
 img { display: block; max-width: 100%; }
 
@@ -57,14 +57,14 @@ img { display: block; max-width: 100%; }
 }
 
 .btn-primary {
-  background: var(--terracotta);
+  background: var(--sage);
   color: #fff;
 }
 .btn-primary:hover {
-  background: var(--terracotta-hover);
+  background: #556647;
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(174, 97, 65, 0.35);
+  box-shadow: 0 8px 24px rgba(110, 123, 94, 0.35);
 }
 
 .btn-ghost {
@@ -73,8 +73,8 @@ img { display: block; max-width: 100%; }
   border: 1.5px solid var(--border);
 }
 .btn-ghost:hover {
-  border-color: var(--terracotta);
-  color: var(--terracotta);
+  border-color: var(--sage);
+  color: var(--sage);
 }
 
 .btn-lg { padding: 20px 48px; font-size: 17px; }
@@ -251,7 +251,7 @@ section { padding: 100px 48px; }
 .hero-card-badge {
   position: absolute;
   top: -16px; right: 32px;
-  background: var(--terracotta);
+  background: var(--sage);
   color: #fff;
   font-size: 13px;
   font-weight: 500;
@@ -749,7 +749,7 @@ footer {
 }
 
 .field input:focus {
-  border-color: var(--terracotta);
+  border-color: var(--sage);
 }
 
 .field input::placeholder {
@@ -938,7 +938,7 @@ footer {
 .divider {
   width: 48px;
   height: 2px;
-  background: var(--terracotta);
+  background: var(--sage);
   margin-bottom: 28px;
 }
 
