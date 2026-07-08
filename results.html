@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Results — Shana Sklar</title>
+  <meta name="description" content="Your personalized path is ready. Find out what's keeping you stuck and how Shana can help." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="results-page">
+
+  <!-- NAV -->
+  <nav id="navbar" style="position:relative; backdrop-filter:none; background:var(--sand-light); border-bottom:1px solid var(--border);">
+    <a href="/" class="nav-logo">Shana Sklar</a>
+    <a href="quiz.html" style="font-size:14px; color:var(--text-muted);">Retake the quiz →</a>
+  </nav>
+
+  <!-- RESULTS HERO -->
+  <section class="results-hero">
+    <span class="result-type-badge" id="resultBadge">Your Result</span>
+    <h1 id="resultHeadline">Loading your results…</h1>
+    <p class="lead" id="resultLead"></p>
+  </section>
+
+  <!-- RESULTS BODY -->
+  <div class="results-body">
+    <div class="container">
+
+      <!-- What this means for you -->
+      <div class="results-grid" id="resultCards">
+        <div class="result-card">
+          <h3>Where You Are</h3>
+          <p id="cardWhere"></p>
+        </div>
+        <div class="result-card">
+          <h3>What You Need Most</h3>
+          <p id="cardNeed"></p>
+        </div>
+      </div>
+
+      <!-- Deeper copy -->
+      <div class="results-copy">
+        <h2>What this means for you</h2>
+        <div id="resultBody"></div>
+      </div>
+
+      <!-- CTA Box -->
+      <div class="results-cta-box">
+        <h2 id="ctaHeadline">Ready to take the first real step?</h2>
+        <p>
+          This call is free. It's not a sales pitch. It's a real conversation
+          about where you are, what you want, and whether working together
+          makes sense.
+        </p>
+
+        <!--
+          CALENDLY EMBED
+          Replace the div below with your Calendly inline embed.
+          Go to calendly.com → Share → Add to website → Inline embed
+          Paste the snippet here.
+        -->
+        <div class="calendly-placeholder" id="calendlyPlaceholder">
+          [ Your Calendly booking widget goes here ]<br>
+          <small style="margin-top:8px;display:block;">Go to calendly.com to create your free booking link, then paste the embed code here.</small>
+        </div>
+
+        <a href="#" class="btn btn-primary btn-lg" id="ctaBtn" onclick="alert('Connect your Calendly link here')">
+          Book Your Call With Shana →
+        </a>
+        <p style="color:rgba(250,247,242,0.45); font-size:13px; margin-top:16px; margin-bottom:0;">
+          Free &nbsp;·&nbsp; No obligation &nbsp;·&nbsp; 30 minutes
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- WHAT WOMEN SAY -->
+  <section class="testimonials" style="background:var(--cream);">
+    <div class="container">
+      <h2>Women who took the same step.</h2>
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>
+            "Shana helped me understand that I wasn't afraid of failing —
+            I was afraid of succeeding and having no more excuses. That one
+            reframe changed everything."
+          </blockquote>
+          <div class="testimonial-author">
+            Aisha T.
+            <span>Left corporate HR, now runs her own firm</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>
+            "I came to Shana mid-transition, feeling like I'd made a massive
+            mistake leaving my job. Six months later I have a business, clients,
+            and I wake up excited on Mondays."
+          </blockquote>
+          <div class="testimonial-author">
+            Rachel S.
+            <span>Former project manager, now life coach</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>
+            "I'd been 'thinking about it' for four years. In one session with
+            Shana I had a plan. In three months I had the courage to execute it.
+            Don't wait as long as I did."
+          </blockquote>
+          <div class="testimonial-author">
+            Dana M.
+            <span>Escaped a 12-year career in finance</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="/" class="footer-logo">Shana Sklar</a>
+    <p class="footer-copy">© 2026 Shana Sklar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const RESULTS_DATA = {
+      'awakening': {
+        label: 'The Awakening',
+        headline: "You're waking up.\nAnd that's exactly the right place to start.",
+        lead: "You've been living on autopilot — doing what was expected, being who people needed, quietly wondering if this is really all there is. The fact that you're here means something in you is stirring.",
+        where: "You're at the very beginning of recognizing that something needs to change. You may not have the words for it yet — just a persistent feeling that this isn't it.",
+        need: "Clarity. Permission. A safe space to get honest about what you actually want without judgment or pressure to have it all figured out.",
+        body: [
+          "This isn't a crisis. It's a calling.",
+          "What you need most right now isn't a 10-step plan. It's <strong>permission to get honest with yourself</strong> — about what you've been tolerating, what you actually want, and what your life could look like if you stopped designing it around other people's expectations.",
+          "Shana works with women in exactly this place. Her 1:1 coaching starts with deep clarity work — helping you cut through the noise, name what's real, and begin building from solid ground."
+        ],
+        cta: "Book Your Clarity Call With Shana"
+      },
+      'ready-rebel': {
+        label: 'The Ready Rebel',
+        headline: "You know.\nYou've known for a while.",
+        lead: "You're not stuck in confusion — you're stuck in the gap between knowing and doing. You can feel the life you want; you just can't see the bridge to get there. And that gap is exhausting.",
+        where: "You've been aware that something needs to shift for some time. The knowing is loud. What's missing is the path — and the belief that you can actually walk it.",
+        need: "A concrete strategy and someone who won't let you talk yourself out of it. You don't need more inspiration — you need a plan and accountability.",
+        body: [
+          "You don't need more motivation. <strong>You need a strategy — and someone who won't let you back out of your own life.</strong>",
+          "Shana spent years in a career that looked right on paper while slowly losing herself inside it. She didn't leave recklessly — she built a real plan. And she helps women like you do the same: get clear on the exit, build genuine confidence in the path, and take the leap without burning everything down.",
+          "You've waited long enough. Let's map your way out."
+        ],
+        cta: "Book Your Strategy Call With Shana"
+      },
+      'in-between': {
+        label: 'The In-Between',
+        headline: "You were brave enough to start.\nNow let's help you finish.",
+        lead: "You've already made a move — or you're mid-leap — and instead of feeling free, you feel unmoored. The old life doesn't fit anymore, but the new one isn't fully formed yet.",
+        where: "You're already in motion. You've taken a step, made a change, or committed to something new. The problem isn't courage — it's that the transition feels messier and lonelier than you expected.",
+        need: "Grounding, direction, and someone who can help you see that you're further along than it feels. You need to rebuild your identity for this new chapter.",
+        body: [
+          "<strong>You haven't made a mistake. You're just in the middle of your story.</strong>",
+          "This is the hardest part of any transformation, and almost no one talks about it honestly. The discomfort you're feeling isn't a sign you made the wrong choice — it's a sign the old identity is dissolving to make room for the new one.",
+          "Shana specializes in helping women who are already in motion find solid ground — rebuilding self-trust, reclaiming direction, and moving forward with confidence instead of constant doubt."
+        ],
+        cta: "Book Your Coaching Call With Shana"
+      }
+    };
+
+    function init() {
+      const params = new URLSearchParams(window.location.search);
+      const type   = params.get('type') || localStorage.getItem('ss_result_key') || 'awakening';
+      const name   = localStorage.getItem('ss_name') || '';
+      const data   = RESULTS_DATA[type] || RESULTS_DATA['awakening'];
+
+      document.getElementById('resultBadge').textContent    = data.label;
+      document.getElementById('resultHeadline').textContent = (name ? `${name}, ` : '') + data.headline;
+      document.getElementById('resultLead').textContent     = data.lead;
+      document.getElementById('cardWhere').textContent      = data.where;
+      document.getElementById('cardNeed').textContent       = data.need;
+      document.getElementById('ctaBtn').textContent         = data.cta + ' →';
+      document.title = `${data.label} — Shana Sklar`;
+
+      const bodyEl = document.getElementById('resultBody');
+      data.body.forEach(para => {
+        const p = document.createElement('p');
+        p.innerHTML = para;
+        bodyEl.appendChild(p);
+      });
+    }
+
+    init();
+  </script>
+
+</body>
+</html>
