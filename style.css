@@ -1,14 +1,15 @@
 :root {
-  --cream: #FAF7F2;
-  --warm-white: #FDF9F4;
-  --text: #2C2416;
-  --text-muted: #6B5744;
-  --terracotta: #BF6B48;
-  --terracotta-hover: #A85A39;
-  --sand: #E8D5BF;
-  --sand-light: #F0E4D4;
-  --border: rgba(44, 36, 22, 0.12);
-  --shadow: 0 4px 32px rgba(44, 36, 22, 0.08);
+  --cream: #EAE5D9;
+  --warm-white: #F2EFE8;
+  --text: #26251D;
+  --text-muted: #5C6350;
+  --terracotta: #AE6141;
+  --terracotta-hover: #9A5438;
+  --sand: #D5D0C4;
+  --sand-light: #ECEAE2;
+  --sage: #6E7B5E;
+  --border: rgba(38, 37, 29, 0.12);
+  --shadow: 0 4px 32px rgba(38, 37, 29, 0.08);
   --radius: 12px;
 }
 
@@ -63,7 +64,7 @@ img { display: block; max-width: 100%; }
   background: var(--terracotta-hover);
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(191, 107, 72, 0.35);
+  box-shadow: 0 8px 24px rgba(174, 97, 65, 0.35);
 }
 
 .btn-ghost {
@@ -87,7 +88,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(250, 247, 242, 0.9);
+  background: rgba(234, 229, 217, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
@@ -153,7 +154,7 @@ section { padding: 100px 48px; }
   position: absolute;
   top: -200px; right: -200px;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(232, 213, 191, 0.5) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(110, 123, 94, 0.15) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -163,7 +164,7 @@ section { padding: 100px 48px; }
   position: absolute;
   bottom: -100px; left: -100px;
   width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(191, 107, 72, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(174, 97, 65, 0.08) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -181,10 +182,10 @@ section { padding: 100px 48px; }
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--sage);
   margin-bottom: 24px;
   padding: 6px 14px;
-  background: rgba(191, 107, 72, 0.1);
+  background: rgba(110, 123, 94, 0.12);
   border-radius: 50px;
 }
 
@@ -196,7 +197,7 @@ section { padding: 100px 48px; }
 
 .hero h1 em {
   font-style: italic;
-  color: var(--terracotta);
+  color: var(--sage);
 }
 
 .hero-sub {
@@ -271,7 +272,7 @@ section { padding: 100px 48px; }
 }
 
 .problem p {
-  color: rgba(250, 247, 242, 0.75);
+  color: rgba(234, 229, 217, 0.75);
   font-size: 18px;
   margin-bottom: 20px;
   max-width: 64ch;
@@ -290,9 +291,9 @@ section { padding: 100px 48px; }
 
 .pillar {
   padding: 32px;
-  border: 1px solid rgba(250, 247, 242, 0.12);
+  border: 1px solid rgba(234, 229, 217, 0.12);
   border-radius: var(--radius);
-  background: rgba(250, 247, 242, 0.04);
+  background: rgba(234, 229, 217, 0.05);
 }
 
 .pillar-label {
@@ -300,7 +301,7 @@ section { padding: 100px 48px; }
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--sage);
   margin-bottom: 12px;
 }
 
@@ -383,7 +384,7 @@ section { padding: 100px 48px; }
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--sage);
   margin-bottom: 20px;
 }
 
@@ -439,8 +440,8 @@ section { padding: 100px 48px; }
 .step-number {
   width: 44px; height: 44px;
   border-radius: 50%;
-  background: rgba(191, 107, 72, 0.12);
-  color: var(--terracotta);
+  background: rgba(110, 123, 94, 0.14);
+  color: var(--sage);
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   display: flex;
@@ -491,7 +492,7 @@ section { padding: 100px 48px; }
 }
 
 .testimonial-stars {
-  color: var(--terracotta);
+  color: var(--sage);
   font-size: 16px;
   letter-spacing: 2px;
   margin-bottom: 16px;
@@ -534,7 +535,7 @@ section { padding: 100px 48px; }
 }
 
 .cta-final p {
-  color: rgba(250, 247, 242, 0.7);
+  color: rgba(234, 229, 217, 0.7);
   font-size: 18px;
   margin: 0 auto 16px;
   max-width: 56ch;
@@ -542,7 +543,7 @@ section { padding: 100px 48px; }
 
 .cta-final .cta-note {
   font-size: 14px;
-  color: rgba(250, 247, 242, 0.45);
+  color: rgba(234, 229, 217, 0.45);
   margin-top: 20px;
   display: block;
 }
@@ -555,7 +556,7 @@ section { padding: 100px 48px; }
 footer {
   padding: 40px 48px;
   background: var(--text);
-  border-top: 1px solid rgba(250,247,242,0.08);
+  border-top: 1px solid rgba(234,229,217,0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -573,7 +574,7 @@ footer {
 
 .footer-copy {
   font-size: 13px;
-  color: rgba(250, 247, 242, 0.35);
+  color: rgba(234, 229, 217, 0.35);
 }
 
 /* ── Quiz Page ── */
@@ -601,7 +602,7 @@ footer {
 
 .quiz-progress-fill {
   height: 100%;
-  background: var(--terracotta);
+  background: var(--sage);
   border-radius: 2px;
   transition: width 0.4s ease;
 }
@@ -630,7 +631,7 @@ footer {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--sage);
   margin-bottom: 16px;
 }
 
@@ -663,15 +664,15 @@ footer {
 }
 
 .answer-card:hover {
-  border-color: var(--terracotta);
+  border-color: var(--sage);
   color: var(--text);
-  background: rgba(191, 107, 72, 0.04);
+  background: rgba(110, 123, 94, 0.06);
   transform: translateX(4px);
 }
 
 .answer-card.selected {
-  border-color: var(--terracotta);
-  background: rgba(191, 107, 72, 0.08);
+  border-color: var(--sage);
+  background: rgba(110, 123, 94, 0.1);
   color: var(--text);
 }
 
@@ -752,7 +753,7 @@ footer {
 }
 
 .field input::placeholder {
-  color: rgba(107, 87, 68, 0.45);
+  color: rgba(94, 90, 79, 0.45);
 }
 
 .lead-form .btn {
@@ -780,7 +781,7 @@ footer {
 
 .loader-dots span {
   width: 10px; height: 10px;
-  background: var(--terracotta);
+  background: var(--sage);
   border-radius: 50%;
   animation: bounce 1.4s infinite ease-in-out both;
 }
@@ -814,7 +815,7 @@ footer {
 
 .result-type-badge {
   display: inline-block;
-  background: var(--terracotta);
+  background: var(--sage);
   color: #fff;
   font-size: 12px;
   font-weight: 600;
@@ -915,17 +916,17 @@ footer {
 }
 
 .results-cta-box p {
-  color: rgba(250, 247, 242, 0.7);
+  color: rgba(234, 229, 217, 0.7);
   margin: 0 auto 36px;
   font-size: 17px;
 }
 
 .calendly-placeholder {
-  background: rgba(250, 247, 242, 0.06);
-  border: 1px dashed rgba(250, 247, 242, 0.2);
+  background: rgba(234, 229, 217, 0.06);
+  border: 1px dashed rgba(234, 229, 217, 0.2);
   border-radius: 12px;
   padding: 40px;
-  color: rgba(250, 247, 242, 0.5);
+  color: rgba(234, 229, 217, 0.5);
   font-size: 14px;
   margin-bottom: 24px;
 }
