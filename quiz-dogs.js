@@ -51,7 +51,7 @@ const RESULTS = {
     need: "A clear, consistent foundation built on communication and trust — not force, not fear. The Scentsible K9 method teaches you how to be the calm, confident leader your dog is already looking for.",
     body: [
       "Dogs don't need dominance. They need a <strong>regulated, consistent human</strong> who communicates clearly and makes them feel safe.",
-      "Shana's approach starts with you — how your energy, your body language, and your nervous system affect your dog before you've said a single command. From there, you'll build real skills together: leash manners, basic obedience, and the foundation of a relationship built on trust.",
+      "Shana's approach starts with understanding your dog — what they're communicating, what they need, and what conditions help them feel safe enough to learn. From there, you'll build real skills together: leash manners, basic obedience, and the foundation of a relationship built on trust.",
       "Starting right is the greatest gift you can give your dog."
     ],
     cta: "Book Your Free Consultation"
@@ -79,7 +79,7 @@ const RESULTS = {
     need: "A focus on connection before commands. Shana uses the Scentsible K9 method to help you understand what your dog is telling you — and how to respond in a way that builds trust, not compliance.",
     body: [
       "Anxious dogs aren't difficult dogs. They're dogs who <strong>haven't felt safe enough to relax into the relationship yet.</strong>",
-      "Shana works with you to regulate your own nervous system first — because your dog reads you constantly. From there, you'll learn to read your dog, respond to what they're actually communicating, and build the kind of bond where obedience is a natural result of trust.",
+      "Shana works with you to create the conditions your dog needs to feel safe, seen, and secure — the three foundations of the Scentsible K9 method. You'll learn to read what your dog is actually communicating and respond in a way that builds genuine trust, not just compliance.",
       "The dog you want is already in there. They just need the right conditions to come out."
     ],
     cta: "Book Your Free Consultation"
