@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Results — You & Your Dog — The Common Ground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="results-page">
+
+  <nav id="navbar" style="position:relative; backdrop-filter:none; background:var(--sand-light); border-bottom:1px solid var(--border);">
+    <a href="/" class="nav-logo">The Common Ground</a>
+    <a href="quiz-dogs.html" style="font-size:14px; color:var(--text-muted);">Retake the quiz →</a>
+  </nav>
+
+  <section class="results-hero">
+    <span class="result-type-badge" id="resultBadge">You & Your Dog</span>
+    <h1 id="resultHeadline">Loading your results…</h1>
+    <p class="lead" id="resultLead"></p>
+  </section>
+
+  <div class="results-body">
+    <div class="container">
+
+      <div class="results-grid" id="resultCards">
+        <div class="result-card">
+          <h3>Where You Are</h3>
+          <p id="cardWhere"></p>
+        </div>
+        <div class="result-card">
+          <h3>What You Need Most</h3>
+          <p id="cardNeed"></p>
+        </div>
+      </div>
+
+      <div class="results-copy">
+        <h2>What this means for you and your dog</h2>
+        <div id="resultBody"></div>
+        <div style="margin-top:24px; padding:20px 24px; background:var(--sand-light); border-radius:var(--radius); border:1px solid var(--border);">
+          <p style="font-size:14px; color:var(--text-muted); margin:0;">
+            🐾 <strong style="color:var(--text);">In-person sessions in Meridian, Idaho.</strong>
+            Using the Scentsible K9 nervous system method.
+          </p>
+        </div>
+      </div>
+
+      <div class="results-cta-box">
+        <h2>Ready to get started?</h2>
+        <p>
+          Book a free call with Shana to talk through where you and your dog are
+          and find the right path forward together.
+        </p>
+        <a href="https://calendly.com/shana-sklar1127/30min" target="_blank" class="btn btn-primary btn-lg">
+          Book Your Free Call With Shana →
+        </a>
+        <p style="color:rgba(234,229,217,0.45); font-size:13px; margin-top:16px; margin-bottom:0;">
+          Free &nbsp;·&nbsp; No obligation &nbsp;·&nbsp; In-person Meridian, ID
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="testimonials" style="background:var(--cream);">
+    <div class="container">
+      <h2>What it looks like when it works.</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"I didn't expect dog training to teach me something about myself. Shana helped me see how my own anxiety was affecting my dog. We both changed."</blockquote>
+          <div class="testimonial-author">Jordan K. <span>Dog training client, Meridian ID</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"My dog had been through two other trainers. Nothing worked. Shana figured out in one session what the others missed entirely — it was me, not my dog."</blockquote>
+          <div class="testimonial-author">Amanda S. <span>Scentsible K9 client</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"I came in thinking my dog was 'broken.' I left understanding we just needed to speak the same language. The relationship we have now is something I didn't think was possible."</blockquote>
+          <div class="testimonial-author">Dana M. <span>Dog training client</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="/" class="footer-logo">The Common Ground</a>
+    <p class="footer-copy">© 2026 Shana Sklar · The Common Ground. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const RESULTS_DATA = {
+      'fresh-start': {
+        label: 'The Fresh Start',
+        headline: "The best time to build the right foundation\nis right now.",
+        lead: "Whether you just got your dog or you're starting over, you're in the ideal position — you get to build this relationship from the ground up, the right way.",
+        where: "You're at the beginning of the training journey. There's no bad history to undo, no patterns to break — just a dog and a human learning how to speak each other's language.",
+        need: "A clear, consistent foundation built on communication and trust — not force, not fear. The Scentsible K9 method teaches you how to be the calm, confident leader your dog is already looking for.",
+        body: [
+          "Dogs don't need dominance. They need a <strong>regulated, consistent human</strong> who communicates clearly and makes them feel safe.",
+          "Shana's approach starts with you — how your energy, your body language, and your nervous system affect your dog before you've said a single command. From there, you'll build real skills together: leash manners, basic obedience, and the foundation of a relationship built on trust.",
+          "Starting right is the greatest gift you can give your dog."
+        ]
+      },
+      'breakthrough': {
+        label: 'The Breakthrough',
+        headline: "You've tried. Your dog has tried.\nYou both deserve an approach that actually works.",
+        lead: "You're not starting from zero — you've put in the work. But something isn't clicking. The missing piece usually isn't technique. It's the nervous system underneath it.",
+        where: "You've got experience and some results — but also some stuck points. Your dog knows what you're asking; they're just not consistently responding. That gap is workable.",
+        need: "A different lens. The Scentsible K9 method looks at what's happening in your dog's nervous system — and yours — before applying any technique. When both are regulated, everything gets easier.",
+        body: [
+          "Most training focuses on what the dog is doing. Shana focuses on <strong>why</strong> — and that's where breakthroughs happen.",
+          "If your dog is reactive, inconsistent, or seems to forget everything they know in certain situations, it's almost always a nervous system response, not a training failure.",
+          "You're closer to the breakthrough than it feels."
+        ]
+      },
+      'bond-builder': {
+        label: 'The Bond Builder',
+        headline: "Your dog isn't the problem.\nThe connection is just missing — and that's fixable.",
+        lead: "You want more than obedience. You want a dog that's calm, happy, and actually wants to be with you. That kind of relationship isn't trained — it's built.",
+        where: "Something is off in the communication between you and your dog. They may be anxious, checked out, or not reading your signals. The good news: nervous systems respond remarkably well to the right conditions.",
+        need: "A focus on connection before commands. Shana uses the Scentsible K9 method to help you understand what your dog is telling you — and how to respond in a way that builds trust, not just compliance.",
+        body: [
+          "Anxious dogs aren't difficult dogs. They're dogs who <strong>haven't felt safe enough to relax into the relationship yet.</strong>",
+          "Shana works with you to regulate your own nervous system first — because your dog reads you constantly. From there, you'll learn to read your dog, respond to what they're actually communicating, and build the bond where obedience is a natural result of trust.",
+          "The dog you want is already in there. They just need the right conditions to come out."
+        ]
+      }
+    };
+
+    function init() {
+      const params = new URLSearchParams(window.location.search);
+      const type   = params.get('type') || 'fresh-start';
+      const name   = localStorage.getItem('ss_name') || '';
+      const data   = RESULTS_DATA[type] || RESULTS_DATA['fresh-start'];
+
+      document.getElementById('resultBadge').textContent    = `You & Your Dog — ${data.label}`;
+      document.getElementById('resultHeadline').textContent = (name ? `${name}, ` : '') + data.headline;
+      document.getElementById('resultLead').textContent     = data.lead;
+      document.getElementById('cardWhere').textContent      = data.where;
+      document.getElementById('cardNeed').textContent       = data.need;
+      document.title = `${data.label} — The Common Ground`;
+
+      const bodyEl = document.getElementById('resultBody');
+      data.body.forEach(para => {
+        const p = document.createElement('p');
+        p.innerHTML = para;
+        bodyEl.appendChild(p);
+      });
+    }
+
+    init();
+  </script>
+
+</body>
+</html>

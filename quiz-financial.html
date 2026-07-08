@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Money & Life Quiz — The Common Ground</title>
+  <meta name="description" content="Find out exactly where you are with money and what you need most right now — without judgment." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="quiz-page">
+
+  <header class="quiz-nav">
+    <a href="/" class="nav-logo">The Common Ground</a>
+    <div style="flex:1; padding: 0 32px;">
+      <div class="quiz-progress-bar">
+        <div class="quiz-progress-fill" id="progressFill" style="width:0%"></div>
+      </div>
+    </div>
+    <span id="progressLabel" style="font-size:13px; color:var(--text-muted); white-space:nowrap;">Question 1 of 5</span>
+  </header>
+
+  <main class="quiz-body">
+
+    <div class="quiz-screen" id="questionScreen">
+      <p class="quiz-step-label" id="stepLabel">Question 1 of 5</p>
+      <h2 class="quiz-question" id="questionText"></h2>
+      <div class="quiz-answers" id="answers"></div>
+      <div class="quiz-nav-row">
+        <button class="quiz-back" id="backBtn" disabled>← Back</button>
+        <button class="btn btn-primary" id="nextBtn" disabled>Next →</button>
+      </div>
+    </div>
+
+    <div class="quiz-screen lead-screen hidden" id="leadScreen">
+      <p class="quiz-step-label">One last thing</p>
+      <h2>Where should we send your results?</h2>
+      <p>Your personalized path is ready. Enter your name and email and we'll show it to you right now.</p>
+      <form class="lead-form" id="leadForm" novalidate>
+        <div class="field">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="name" placeholder="Your first name" required autocomplete="given-name" />
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Show Me My Results →</button>
+        <p class="form-fine-print">No spam. No pressure. Shana will only reach out if you want her to.</p>
+      </form>
+    </div>
+
+    <div class="quiz-screen loading-screen hidden" id="loadingScreen">
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+      <p>Reading your answers and finding your path…</p>
+    </div>
+
+  </main>
+
+  <script src="quiz-financial.js"></script>
+</body>
+</html>

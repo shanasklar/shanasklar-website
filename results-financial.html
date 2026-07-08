@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Results — Money & Life — The Common Ground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="results-page">
+
+  <nav id="navbar" style="position:relative; backdrop-filter:none; background:var(--sand-light); border-bottom:1px solid var(--border);">
+    <a href="/" class="nav-logo">The Common Ground</a>
+    <a href="quiz-financial.html" style="font-size:14px; color:var(--text-muted);">Retake the quiz →</a>
+  </nav>
+
+  <section class="results-hero">
+    <span class="result-type-badge" id="resultBadge">Money & Life</span>
+    <h1 id="resultHeadline">Loading your results…</h1>
+    <p class="lead" id="resultLead"></p>
+  </section>
+
+  <div class="results-body">
+    <div class="container">
+
+      <div class="results-grid" id="resultCards">
+        <div class="result-card">
+          <h3>Where You Are</h3>
+          <p id="cardWhere"></p>
+        </div>
+        <div class="result-card">
+          <h3>What You Need Most</h3>
+          <p id="cardNeed"></p>
+        </div>
+      </div>
+
+      <div class="results-copy">
+        <h2>What this means for you</h2>
+        <div id="resultBody"></div>
+      </div>
+
+      <div class="results-cta-box">
+        <h2>Ready to take the first step?</h2>
+        <p>
+          A free 1:1 call with Shana. No pitch. No pressure.
+          Just an honest conversation about where you are and what's possible.
+        </p>
+        <a href="https://calendly.com/shana-sklar1127/30min" target="_blank" class="btn btn-primary btn-lg" id="ctaBtn">
+          Book Your Free Call With Shana →
+        </a>
+        <p style="color:rgba(234,229,217,0.45); font-size:13px; margin-top:16px; margin-bottom:0;">
+          Free &nbsp;·&nbsp; No obligation &nbsp;·&nbsp; No pressure
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="testimonials" style="background:var(--cream);">
+    <div class="container">
+      <h2>Women who took the same step.</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"I finally understand my money — not just what to do with it, but why I've been avoiding it. That shift alone was worth everything."</blockquote>
+          <div class="testimonial-author">Sarah M. <span>Financial coaching client</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Shana never made me feel behind. She met me exactly where I was — and helped me see where I could go."</blockquote>
+          <div class="testimonial-author">Jordan K. <span>Money & life coaching client</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"I came for budgeting help and left with a whole new relationship with my career and my future. I didn't expect that."</blockquote>
+          <div class="testimonial-author">Michelle R. <span>Common Ground client</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="/" class="footer-logo">The Common Ground</a>
+    <p class="footer-copy">© 2026 Shana Sklar · The Common Ground. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const RESULTS_DATA = {
+      'avoider': {
+        label: 'The Avoider',
+        headline: "You're not bad with money.\nYour nervous system just learned to protect you from it.",
+        lead: "Avoidance isn't a character flaw — it's a survival response. When money has felt scary or tied to shame, your brain does the only thing it knows: it looks away. That ends here.",
+        where: "You're at the beginning — not because you're behind, but because no one ever made this feel safe enough to start. That's exactly what we fix first.",
+        need: "A judgment-free foundation. Real financial education delivered at your pace, in a space where you never feel stupid or behind.",
+        body: [
+          "Before strategy, before budgets, before any of the 'what you should be doing' talk — you need to feel <strong>safe enough to look.</strong>",
+          "Shana's approach starts with nervous system regulation and financial literacy together. You'll learn how money actually works, why you've related to it the way you have, and how to build a new relationship with it — one that doesn't make you want to close the tab.",
+          "This isn't about catching up. It's about starting clean, from solid ground."
+        ]
+      },
+      'striver': {
+        label: 'The Striver',
+        headline: "You know more than you think.\nThe gap is between knowing and doing.",
+        lead: "You've read the articles. Made the plans. And somehow you're still in the same place. That's not a willpower problem — it's a nervous system pattern. And patterns can change.",
+        where: "You're in motion but spinning your wheels. You have the awareness — what's missing is accountability and a plan built around your real life.",
+        need: "1:1 coaching and accountability. Someone who helps you close the gap between what you know and what you actually do — without judgment when you fall off track.",
+        body: [
+          "Knowing what to do and consistently doing it are two entirely different skills. <strong>The second one isn't taught — it's coached.</strong>",
+          "Shana works with you to identify the specific patterns keeping you stuck, build systems that fit your actual life, and stay in your corner when things get hard.",
+          "You're closer than you think. Let's close the gap."
+        ]
+      },
+      'liberator': {
+        label: 'The Liberator',
+        headline: "You're not just ready to manage money better.\nYou're ready to build a completely different life.",
+        lead: "This goes beyond budgets. You can feel the gap between the life you're living and the life you want — financially, professionally, maybe in every way. You're ready to close it.",
+        where: "You're at an inflection point. The old path doesn't fit anymore. You don't just need financial advice — you need someone who understands that money, career, and identity are all connected.",
+        need: "A strategic partner who can hold the big picture — your finances, your career direction, and the vision you have for your life — and help you build toward all of it at once.",
+        body: [
+          "Financial freedom and life freedom aren't separate goals. <strong>The work Shana does sits at the intersection of both.</strong>",
+          "Whether you're considering a career change, building toward leaving a job that no longer fits, or designing a financial life that matches who you actually are — this is the conversation for you.",
+          "You've been patient long enough. Let's build the plan."
+        ]
+      }
+    };
+
+    function init() {
+      const params = new URLSearchParams(window.location.search);
+      const type   = params.get('type') || 'avoider';
+      const name   = localStorage.getItem('ss_name') || '';
+      const data   = RESULTS_DATA[type] || RESULTS_DATA['avoider'];
+
+      document.getElementById('resultBadge').textContent    = `Money & Life — ${data.label}`;
+      document.getElementById('resultHeadline').textContent = (name ? `${name}, ` : '') + data.headline;
+      document.getElementById('resultLead').textContent     = data.lead;
+      document.getElementById('cardWhere').textContent      = data.where;
+      document.getElementById('cardNeed').textContent       = data.need;
+      document.title = `${data.label} — The Common Ground`;
+
+      const bodyEl = document.getElementById('resultBody');
+      data.body.forEach(para => {
+        const p = document.createElement('p');
+        p.innerHTML = para;
+        bodyEl.appendChild(p);
+      });
+    }
+
+    init();
+  </script>
+
+</body>
+</html>

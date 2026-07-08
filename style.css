@@ -931,6 +931,93 @@ footer {
   margin-bottom: 24px;
 }
 
+/* ── Path Cards (fork section) ── */
+.paths-section {
+  background: var(--cream);
+  padding: 100px 48px;
+}
+
+.path-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.path-card {
+  background: var(--warm-white);
+  border: 1.5px solid var(--border);
+  border-radius: 24px;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.path-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.path-card-icon {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.path-card-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+
+.path-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--text);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.path-card p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: none;
+  margin: 0;
+}
+
+.path-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 4px 0 8px;
+}
+
+.path-list li {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding-left: 18px;
+  position: relative;
+}
+
+.path-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--sage);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .paths-section { padding: 72px 24px; }
+  .path-cards { grid-template-columns: 1fr; }
+}
+
 /* ── Utilities ── */
 .text-center { text-align: center; }
 .hidden { display: none !important; }
